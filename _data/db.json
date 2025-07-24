@@ -1,0 +1,78 @@
+
+
+{
+  "recipes": [
+    {
+      "id": "1",
+      "title": "Veggie Carbonara",
+      "image": "profile1.png",
+      "time": 20,
+      "description": "A vegetarian twist on the classic Italian pasta dish with eggs, cheese, and vegetarian bacon.",
+      "vegan": false
+    },
+    {
+      "id": "2",
+      "title": "Veg Stir-Fry",
+      "image": "profile2.png",
+      "time": 25,
+      "description": "A quick and healthy vegetarian stir-fry with fresh vegetables and tofu.",
+      "vegan": true
+    },
+    {
+      "id": "3",
+      "title": "Chickpea Salad",
+      "image": "profile3.png",
+      "time": 15,
+      "description": "A protein-packed salad with chickpeas, cucumber, tomatoes, and lemon dressing.",
+      "vegan": true
+    },
+    {
+      "id": "4",
+      "title": "Mushroom Risotto",
+      "image": "profile1.png",
+      "time": 35,
+      "description": "Creamy risotto made with mushrooms, garlic, and parmesan cheese.",
+      "vegan": false
+    },
+    {
+      "id": "5",
+      "title": "Tofu Curry",
+      "image": "profile2.png",
+      "time": 30,
+      "description": "A spicy and creamy vegan curry with tofu, coconut milk, and vegetables.",
+      "vegan": true
+    },
+    {
+      "id": "6",
+      "title": "Grilled Veggie Wrap",
+      "image": "profile3.png",
+      "time": 20,
+      "description": "Whole wheat wrap filled with grilled zucchini, peppers, and hummus.",
+      "vegan": true
+    },
+    {
+      "id": "7",
+      "title": "Eggplant Parmesan",
+      "image": "profile1.png",
+      "time": 40,
+      "description": "Baked eggplant slices topped with marinara and melted cheese.",
+      "vegan": false
+    },
+    {
+      "id": "8",
+      "title": "Avocado Toast",
+      "image": "profile2.png",
+      "time": 10,
+      "description": "Toasted bread topped with mashed avocado, olive oil, and chili flakes.",
+      "vegan": true
+    },
+    {
+      "id": "9",
+      "title": "Quinoa Bowl",
+      "image": "profile3.png",
+      "time": 25,
+      "description": "Nutritious quinoa bowl with roasted veggies and tahini sauce.",
+      "vegan": true
+    }
+  ]
+}
