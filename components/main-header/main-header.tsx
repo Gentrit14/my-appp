@@ -4,16 +4,16 @@ import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
-import Logo1 from '@/assets/img/logo.png'
+import Logo1 from '@/public/assets/img/logo.png'
 import Image from 'next/image'
 import { Button } from '../ui/button'
 
 
 const navigation = [
-  { name: 'Home', href: '#' },
-  { name: 'About', href: '#' },
-  { name: 'Products', href: '#' },
-  { name: 'Contact', href: '#' },
+  { name: 'Home', href: '/' },
+  { name: 'About', href: '/about' },
+  { name: 'Products', href: '/products' },
+  { name: 'Contact', href: '/contact' },
 ]
 
 
@@ -46,9 +46,9 @@ export default function Mainheader() {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-sm/6 font-semibold text-gray-900">
+              <Link key={item.name} href={item.href} className="text-sm/6 font-medium transition hover:underline text-gray-800">
                 {item.name}
-              </a>
+              </Link>
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -61,14 +61,14 @@ export default function Mainheader() {
           <div className="fixed inset-0 z-50" />
           <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
-              <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
-                <img
-                  alt=""
-                  src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
-                  className="h-8 w-auto"
-                />
-              </a>
+            <Link href="#" className="-m-1.5 p-1.5">
+              <span className="sr-only">Your Company</span>
+              <Image
+                alt=""
+                src={Logo1}
+                className="h-20 w-auto"
+              />
+            </Link>
               <button
                 type="button"
                 onClick={() => setMobileMenuOpen(false)}
@@ -85,19 +85,16 @@ export default function Mainheader() {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50 "
                     >
                       {item.name}
                     </a>
                   ))}
                 </div>
                 <div className="py-6">
-              <a
-                href="#"
-                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              >
+              <Button>
                 Contact
-              </a>
+              </Button>
                 </div>
               </div>
             </div>

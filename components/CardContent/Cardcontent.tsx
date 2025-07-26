@@ -38,30 +38,38 @@ export default async function CardContent1() {
 
   return (
     <main>
-      <div className='grid xs:grid-cols-3 3xl:grid-cols-1 gap-4 p-4'>
-          {recipes.map(recipe => (
-            <Card key={recipe.id} className='flex flex-col justify-between'>
-               <CardHeader className='flex-row gap-4 items-center'>
-                 <Avatar>
-                   <AvatarImage src={`/img/${recipe.image}`} alt='recipe img' />
-                   <AvatarFallback>
-                     {recipe.title.slice(0,2)}
-                   </AvatarFallback>
-                 </Avatar>
-                 <div>
-                    <CardTitle>{recipe.title}</CardTitle>
-                    <CardDescription>{recipe.time} mins to do..</CardDescription>
-                 </div>
-               </CardHeader>
-               <CardContent>
-                  <p>{recipe.description}</p>
-               </CardContent>
-               <CardFooter className='flex justify-between'>
-                 <Button >View Recipe</Button>
-                 {recipe.vegan && <Badge variant="secondary">Vegan!</Badge>}
-               </CardFooter>
-            </Card>
-          ))}
+      <div className="text-center">
+        <h2 className="text-5xl pb-15  tracking-tight text-balance text-gray-900 sm:text-5xl">
+              Testimonials
+        </h2>
+      </div>
+      <div className='grid xs:grid-cols-3 4xl:grid-cols-1 gap-4 p-4 mb-60'>
+        
+      {recipes.map((recipe, index) => (
+        <Card key={`${recipe.id}-${index}`} className='flex flex-col justify-between'>
+          <CardHeader className='flex-row gap-4 items-center'>
+            <Avatar>
+              <AvatarImage src={`/img/${recipe.image}`} alt='recipe img' />
+              <AvatarFallback>
+                {recipe.title.slice(0,2)}
+              </AvatarFallback>
+            </Avatar>
+            <div>
+              <CardTitle>{recipe.title}</CardTitle>
+              <CardDescription>{recipe.time} mins to do..</CardDescription>
+            </div>
+          </CardHeader>
+          <CardContent>
+            <p>{recipe.description}</p>
+          </CardContent>
+          <CardFooter className='flex justify-between'>
+            <Button>View Recipe</Button>
+            {recipe.vegan && <Badge variant="secondary">Vegan!</Badge>}
+          </CardFooter>
+        </Card>
+      ))}
+
+
       </div>
     </main>
   )

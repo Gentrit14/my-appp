@@ -1,6 +1,6 @@
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
 import Image from 'next/image'
-import Features1 from '@/assets/img/features1.jpg'
+import Features1 from '@/public/assets/img/features1.jpg'
 
 const features = [
   {
@@ -23,6 +23,7 @@ const features = [
 
 export default function Features() {
   return (
+    <main>
     <div className="overflow-hidden py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
@@ -33,7 +34,7 @@ export default function Features() {
                 Ujë nga malet e Dukatit
               </p>
               <p className="mt-6 text-lg/8 ">
-                Uji është burimi i jetës – dhe ne sjellim më të mirën prej tij. "Ujë Dukati" ofron ujë të pastër e natyral nga burimet malore të Dukatit, duke garantuar cilësi dhe freski në çdo pikë.
+                Uji është burimi i jetës – dhe ne sjellim më të mirën prej tij. Ujë Dukati ofron ujë të pastër e natyral nga burimet malore të Dukatit, duke garantuar cilësi dhe freski në çdo pikë.
 
               </p>
               <dl className="mt-10 max-w-xl space-y-8 text-base/7  lg:max-w-none">
@@ -59,5 +60,6 @@ export default function Features() {
         </div>
       </div>
     </div>
+    </main>
   )
 }
