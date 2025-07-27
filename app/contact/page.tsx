@@ -128,7 +128,7 @@ export default function Contact() {
             </div>
             <label htmlFor="agree-to-policies" className="text-sm/6 text-gray-600">
               By selecting this, you agree to our{' '}
-              <a href="#" className="font-semibold whitespace-nowrap text-indigo-600">
+              <a href="#" className="font-semibold whitespace-nowrap text-primary">
                 privacy policy
               </a>
               .

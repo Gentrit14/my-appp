@@ -1,5 +1,4 @@
 
-import Mainheader from '@/components/main-header/main-header'
 import Features from '@/components/FeatureSection/feature'
 import CardContent1 from '@/components/CardContent/Cardcontent'
 import Stats from '@/components/StatsComponent/Stats'
@@ -16,8 +15,6 @@ export default async function Home() {
   return (
     <main>
     <div className="bg-white">
-
-      <Mainheader />
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
 

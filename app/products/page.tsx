@@ -1,5 +1,5 @@
 
-import ProductList2 from '@/components/ProductLists/ProductList2'
+import ProductList2 from '@/app/products/ProductList2'
 
 
 

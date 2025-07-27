@@ -52,9 +52,11 @@ export default function Mainheader() {
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+            <Link href="/contact">
               <Button>
                 Contact
               </Button>
+             </Link>
           </div>
         </nav>
         <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">

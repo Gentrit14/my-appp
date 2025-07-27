@@ -26,5 +26,124 @@
       "description": "A protein-packed salad with chickpeas, cucumber, tomatoes, and lemon dressing.",
       "vegan": true
     }
+  ],
+  
+  "products": [
+    {
+      "id": 1,
+      "name": "Chanel No. 5",
+      "price": "$120",
+      "image": "/assets/img/card1.jpg",
+      "imageAlt": "Chanel No. 5 classic perfume bottle.",
+      "description": "Një aromë ikonike me nota trëndafili, jasemini dhe vanilje.",
+      "highlights": [
+        "Aromë klasike franceze",
+        "Notat e luleve dhe drurit",
+        "I përshtatshëm për mbrëmje elegante"
+      ],
+      "details": "Chanel No. 5 është parfum me një kombinim të përjetshëm lulesh, vaniljeje dhe aromave të drurit që e bëjnë atë të dallueshëm që nga viti 1921."
+    },
+    {
+      "id": 2,
+      "name": "Dior Sauvage",
+      "price": "$135",
+      "image": "/assets/img/card2.jpg",
+      "imageAlt": "Dior Sauvage bottle.",
+      "description": "Freski dhe fuqi me nota bergamoti dhe piper të zi.",
+      "highlights": [
+        "Notat e bergamotit dhe ambroxanit",
+        "I përshtatshëm për përdorim të përditshëm",
+        "Rezistencë e gjatë në lëkurë"
+      ],
+      "details": "Dior Sauvage është një parfum modern për meshkuj me një aromë të freskët dhe të fuqishme që e bën të veçantë në çdo rast."
+    },
+    {
+      "id": 3,
+      "name": "Yves Saint Laurent Libre",
+      "price": "$150",
+      "image": "/assets/img/card3.jpg",
+      "imageAlt": "YSL Libre perfume bottle.",
+      "description": "Një kombinim i lavandës franceze dhe lulesh portokalli për një aromë të guximshme.",
+      "highlights": [
+        "Lavandë franceze e freskët",
+        "Aromë e ngrohtë dhe sensuale",
+        "Rezistencë e gjatë gjatë gjithë ditës"
+      ],
+      "details": "YSL Libre është një parfum i krijuar për femrat që duan të ndihen të lira dhe elegante."
+    },
+    {
+      "id": 4,
+      "name": "Gucci Bloom",
+      "price": "$110",
+      "image": "/assets/img/card4.jpg",
+      "imageAlt": "Gucci Bloom perfume bottle.",
+      "description": "Aromë e pasur lulesh, perfekte për pranverë dhe verë.",
+      "highlights": [
+        "Notat e trëndafilit dhe tuberozës",
+        "E përshtatshme për çdo rast",
+        "I qëndrueshëm për orë të tëra"
+      ],
+      "details": "Gucci Bloom është aromë elegante me thekse lulesh të bardha që përfaqëson natyrën e butë dhe femërore."
+    },
+    {
+      "id": 5,
+      "name": "Tom Ford Black Orchid",
+      "price": "$180",
+      "image": "/assets/img/card5.jpg",
+      "imageAlt": "Tom Ford Black Orchid perfume bottle.",
+      "description": "Aromë misterioze me nota orkideje të zezë dhe truffle.",
+      "highlights": [
+        "Aromë unike dhe e thellë",
+        "E përshtatshme për netët e ftohta",
+        "Një parfum luksoz"
+      ],
+      "details": "Black Orchid nga Tom Ford është një parfum luksoz dhe i thellë, i kombinuar me orkide të zezë dhe aroma orientale."
+    },
+    {
+      "id": 6,
+      "name": "Versace Eros",
+      "price": "$95",
+      "image": "/assets/img/card6.jpg",
+      "imageAlt": "Versace Eros perfume bottle.",
+      "description": "Aromë freskuese me nota mente dhe vanilje.",
+      "highlights": [
+        "Aromë energjike dhe freskuese",
+        "Perfekte për meshkuj",
+        "Zgjat gjatë gjithë ditës"
+      ],
+      "details": "Versace Eros është i frymëzuar nga dashuria dhe fuqia, duke ofruar një aromë unike dhe tërheqëse."
+    },
+    {
+      "id": 7,
+      "name": "Armani Si",
+      "price": "$140",
+      "image": "/assets/img/card7.jpg",
+      "imageAlt": "Armani Si perfume bottle.",
+      "description": "Aromë e ëmbël dhe elegante me nota vaniljeje dhe patchouli.",
+      "highlights": [
+        "Aromë e butë dhe femërore",
+        "E përshtatshme për çdo sezon",
+        "Perfekte për raste të veçanta"
+      ],
+      "details": "Armani Si është një parfum modern dhe romantik, me një kombinim të mrekullueshëm të aromave të ëmbla."
+    },
+    {
+      "id": 8,
+      "name": "Paco Rabanne 1 Million",
+      "price": "$125",
+      "image": "/assets/img/card8.jpg",
+      "imageAlt": "Paco Rabanne 1 Million perfume bottle.",
+      "description": "Aromë e pasur me nota kanellë dhe lëkure.",
+      "highlights": [
+        "Aromë luksoze dhe mashkullore",
+        "Notat e erëzave dhe drurit",
+        "Perfekte për mbrëmje të veçanta"
+      ],
+      "details": "1 Million nga Paco Rabanne është një parfum ikonik me një aromë të fortë dhe tërheqëse që të bën të veçantë."
+    }
   ]
+
+
 }
+
+
