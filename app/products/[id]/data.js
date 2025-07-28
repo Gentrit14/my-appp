@@ -11,7 +11,7 @@ export const products = [
   {
     id: 1,
     name: 'Chanel No. 5',
-    price: '$120',
+    price: 120,
     imageSrc: Card1,
     imageAlt: 'Chanel No. 5 classic perfume bottle.',
     description: 'Një aromë ikonike me nota trëndafili, jasemini dhe vanilje.',
@@ -26,7 +26,7 @@ export const products = [
   {
     id: 2,
     name: 'Dior Sauvage',
-    price: '$135',
+    price: 135,
     imageSrc: Card2,
     imageAlt: 'Dior Sauvage bottle.',
     description: 'Freski dhe fuqi me nota bergamoti dhe piper të zi.',
@@ -41,7 +41,7 @@ export const products = [
   {
     id: 3,
     name: 'Yves Saint Laurent Libre',
-    price: '$110',
+    price: 110,
     imageSrc: Card3,
     imageAlt: 'Yves Saint Laurent Libre bottle.',
     description: 'Një aromë femërore me nota të lavandës dhe lulesh portokalli.',
@@ -56,7 +56,7 @@ export const products = [
   {
     id: 4,
     name: 'Gucci Bloom',
-    price: '$115',
+    price: 115,
     imageSrc: Card4,
     imageAlt: 'Gucci Bloom fragrance bottle.',
     description: 'Aromë lulesh të bardha dhe tuberoze.',
@@ -71,7 +71,7 @@ export const products = [
   {
     id: 5,
     name: 'Versace Eros',
-    price: '$125',
+    price: 125,
     imageSrc: Card5,
     imageAlt: 'Versace Eros perfume bottle.',
     description: 'Aromë për meshkuj me vanilje, mente dhe tonka bean.',
@@ -86,7 +86,7 @@ export const products = [
   {
     id: 6,
     name: 'Tom Ford Black Orchid',
-    price: '$150',
+    price: 150,
     imageSrc: Card6,
     imageAlt: 'Tom Ford Black Orchid bottle.',
     description: 'Aromë unisex me nota orkideje, truffle dhe patchouli.',
@@ -101,7 +101,7 @@ export const products = [
   {
     id: 7,
     name: 'Paco Rabanne 1 Million',
-    price: '$99',
+    price: 99,
     imageSrc: Card7,
     imageAlt: 'Paco Rabanne 1 Million bottle.',
     description: 'Aromë e ëmbël me kanellë dhe lëkurë.',
@@ -116,7 +116,7 @@ export const products = [
   {
     id: 8,
     name: 'Armani Si',
-    price: '$105',
+    price: 105,
     imageSrc: Card8,
     imageAlt: 'Armani Si bottle.',
     description: 'Aromë elegante me vanilje dhe trëndafil.',

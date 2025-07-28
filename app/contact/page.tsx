@@ -137,7 +137,7 @@ export default function Contact() {
         </div>
         <div className="mt-10 items-center">
           <Button>
-            Let's talk
+            Lets talk
           </Button>
         </div>
       </form>
