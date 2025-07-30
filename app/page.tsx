@@ -7,7 +7,7 @@ import LogoClouds from '@/components/LogoClouds/LogoClouds'
 import ProductList from '@/components/ProductLists/ProductLists'
 import PromoSection from '@/components/PromoSection/PromoSection'
 import Newsletter from '@/components/NewsletterSection/Newsletter'
-
+import { motion } from 'framer-motion';
 
 
 export default async function Home() {
@@ -15,7 +15,9 @@ export default async function Home() {
   return (
     <main>
     <div className="bg-white">
+
       <div className="relative isolate px-6 pt-14 lg:px-8">
+        
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
 
           <div className="text-center">

@@ -7,6 +7,7 @@ import Link from 'next/link';
 import Logo1 from '@/public/assets/img/logo.png';
 import Image from 'next/image';
 import { Button } from '../ui/button';
+import { motion } from 'framer-motion';
 
 const navigation = [
   { name: 'Home', href: '/' },
@@ -15,13 +16,18 @@ const navigation = [
   { name: 'Contact', href: '/contact' },
 ];
 
-// ✅ Prano propin onOpenCart nga layout
 export default function MainHeader({ onOpenCart }: { onOpenCart: () => void }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <header className="absolute inset-x-0 top-0 z-50">
-      <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
+      <motion.nav
+        aria-label="Global"
+        className="flex items-center justify-between p-6 lg:px-8"
+        initial={{ opacity: 0, y: -30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: 'easeOut' }}
+      >
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
@@ -29,7 +35,6 @@ export default function MainHeader({ onOpenCart }: { onOpenCart: () => void }) {
           </Link>
         </div>
 
-        {/* Mobile menu icon */}
         <div className="flex lg:hidden">
           <button
             type="button"
@@ -41,7 +46,6 @@ export default function MainHeader({ onOpenCart }: { onOpenCart: () => void }) {
           </button>
         </div>
 
-        {/* Desktop navigation */}
         <div className="hidden lg:flex lg:gap-x-12">
           {navigation.map((item) => (
             <Link key={item.name} href={item.href} className="text-sm/6 font-medium transition hover:underline text-gray-800">
@@ -50,20 +54,18 @@ export default function MainHeader({ onOpenCart }: { onOpenCart: () => void }) {
           ))}
         </div>
 
-        {/* Buttons on the right (desktop) */}
         <div className="hidden lg:flex lg:flex-1 lg:justify-end gap-4">
           <Button variant="outline" onClick={onOpenCart}>
             <ShoppingCartIcon className="w-5 h-5 mr-1" />
             Cart
           </Button>
-
           <Link href="/contact">
             <Button>Contact</Button>
           </Link>
         </div>
-      </nav>
+      </motion.nav>
 
-      {/* Mobile dialog */}
+      {/* Mobile dialog remains unchanged */}
       <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
         <div className="fixed inset-0 z-50" />
         <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
